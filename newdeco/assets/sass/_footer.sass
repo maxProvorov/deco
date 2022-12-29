@@ -1,0 +1,47 @@
+.footer
+    background: #C7B198
+    height: 240px
+    color: #F0ECE3
+    &-wrap
+        height: 100%
+
+        display: flex
+        justify-content: space-between
+        align-items: center
+        font-family: Montserrat
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 170%
+        .footer-menu
+            list-style: none
+            text-align: center
+            li
+                &:not(:last-child)
+                    margin-bottom: 10px
+                a, a:active, a:hover
+                    text-decoration: none
+                    color: #F0ECE3
+    &-mail
+        height: 100%
+        position: relative
+        width: 220px
+        span
+            position: absolute
+            bottom: 43px
+    &-logo
+        width: 220px
+        height: 100%
+        position: relative
+        img
+            position: absolute
+            bottom: 43px
+            right: 0
+.footer-post
+    height: 100px
+    img, span
+        position: relative
+        bottom: 0
+    .footer-wrap
+        height: auto
+        padding-top: 20px

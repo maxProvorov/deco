@@ -1,0 +1,186 @@
+*
+    margin: 0
+body
+    padding: 0
+    font-family: 'Montserrat', sans-serif
+    color: $brown
+    font-style: normal
+    font-weight: normal
+    overflow-x: hidden
+iframe
+    border-width: 0px
+.wrapper
+    max-width: 1280px
+    margin-left: auto
+    margin-right: auto
+h1
+    font-family: Playfair Display, serif
+    font-size: 52px
+    line-height: 130%
+    font-weight: 400
+    margin-bottom: 40px
+h2
+    font-family: Playfair Display, serif
+    font-weight: 500
+    font-size: 36px
+    line-height: 48px
+    text-align: center
+    span
+        color: #C7B198
+h3
+    font-family: Playfair Display
+    font-weight: normal
+    font-size: 24px
+    line-height: 150%
+h4
+    font-weight: normal
+    font-size: 16px
+    line-height: 170%
+    text-align: center
+.header-wrapper
+    max-width: 1320px
+    margin-left: auto
+    margin-right: auto
+.header-top
+    height: 80px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    color: $brown
+    .header-info
+        margin-left: -130px
+        text-align: center
+        display: flex
+        font-weight: 500
+        font-size: 16px
+        line-height: 170%
+        .header-phone
+            img
+                margin-left: 15px
+            a
+                text-decoration: none
+                color: $brown
+        .header-mail
+            margin-right: 70px
+            a
+                text-decoration: none
+                color: $brown
+    .header-menu-toggle
+        width: 40px
+        height: 20px
+        display: flex
+        align-items: center
+        cursor: pointer
+        position: relative
+        transform: rotate(0deg)
+        /** transition: .5s ease-in-out **/
+        span
+            opacity: 1
+            left: 0
+            display: block
+            position: absolute
+            height: 2px
+            background-color: $brown
+            width: 100%
+            transition: .25s ease-in-out
+        span:nth-child(1)
+            top: 0px
+        span:nth-child(2),
+        span:nth-child(3)
+            top: 10px
+        span:nth-child(4)
+            top: 20px
+    .openBurger
+        span:nth-child(1)
+            top: 12px
+            width: 0%
+            left: 50%
+    .openBurger
+        span:nth-child(2)
+            transform: rotate(45deg)
+    .openBurger
+        span:nth-child(3)
+            transform: rotate(-45deg)
+    .openBurger
+        span:nth-child(4)
+            top: 12px
+            width: 0%
+            left: 50%
+.fix
+    position: fixed
+    right: 0
+.header-nav
+    width: 488px
+    height: 0
+    right: 0
+    background: rgba(255, 255, 248, 0.6)
+    backdrop-filter: blur(10px)
+    position: absolute
+    visibility: hidden
+
+    .header-menu
+        margin-top: 70px
+        list-style: none
+        text-align: center
+
+        .menu-item
+            font-weight: 500
+            font-size: 24px
+            line-height: 150%
+            &:not(:last-child)
+                margin-bottom: 40px
+        a, a:active, a:hover
+            text-decoration: none
+            color: $brown
+        a
+            width: 100%
+.open
+    z-index: 99
+    visibility: visible
+    height: 706px
+    transition: 1s ease-in-out
+.header-bottom
+    height: 706px
+    background-color: #fff
+    width: 100%
+    position: relative
+    .main-img
+        height: 706px
+        right: -60px
+        position: absolute
+    .header-content
+        position: absolute
+        box-sizing: border-box
+        z-index: 5
+        color: $brown
+        padding-top: 170px
+        padding-left: 140px
+        display: flex
+        flex-direction: column
+        span
+            display: inline-block
+            font-family: Montserrat
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 170%
+            width: 500px
+            margin-bottom: 60px
+
+.button
+    background: $button
+    color: $button-text
+    font-size: 16px
+    line-height: 170%
+    border: none
+    cursor: pointer
+    &__header
+        width: 185px
+        height: 50px
+    &__about
+        width: 167px
+        height: 67px
+.eedee-gutenslider-prev
+    left: calc(-50px + var(--gutenslider-arrow-x-offset)) !important
+.eedee-gutenslider-next
+    left: calc(86vw + var(--gutenslider-arrow-x-offset)) !important
